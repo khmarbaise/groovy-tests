@@ -3,7 +3,7 @@ import java.util.*
 
 def currentFolder = new File(".").getCanonicalPath() + "/";
 
-def logFileInput = new File(basedir, "build.log")
+def logFileInput = new File(basedir, "src/main/resources/build.log")
 
 new File(basedir, "build-filtered.log").withWriter { out ->
     logFileInput.eachLine { line ->
