@@ -17,3 +17,10 @@ def fields = [
 ]
 
 fields.each { item -> println item }
+
+def simpleString = "This is a Test";
+
+if (simpleString.startsWith(/This is a/)) {
+  println "This is true"
+}
+
